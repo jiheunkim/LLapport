@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+.container {
+  text-align: match-parent;
+  text-size-adjust: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +44,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-background {
+  background-color: #151633;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  margin: 0; /* 바깥 여백을 없애기 위해 설정 */
+  padding: 0; /* 안쪽 여백도 없애기 위해 설정 */
+  overflow: hidden; /* 내용이 화면을 벗어나지 않도록 설정 */
 }
