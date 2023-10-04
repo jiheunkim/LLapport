@@ -1,0 +1,28 @@
+/* 세련된 버튼 스타일 */
+.btn {
+    background-color: white; /* 배경색 */
+    color: black; /* 글꼴 색상 */
+    border: none; /* 테두리 제거 */
+    padding: 12px 24px; /* 내부 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    text-decoration: none; /* 텍스트에 밑줄 제거 */
+    display: inline-block;
+    font-size: 18px; /* 글꼴 크기 */
+    margin: 10px 0; /* 바깥 여백 */
+    cursor: pointer; /* 커서 스타일 설정 */
+    border-radius: 6px; /* 버튼 테두리 둥글게 만들기 */
+    transition-duration: 0.4s; /* 호버 효과 시간 설정 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  }
+  
+  /* 버튼에 호버 효과 추가 */
+  .btn:hover {
+    background-color: white;
+  }
+  
+  /* 버튼을 클릭할 때 효과 */
+  .btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+  
