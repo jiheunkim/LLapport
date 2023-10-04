@@ -98,6 +98,8 @@ function Main() {
           <Webcam
             className='container'
             audio={true}
+            height={540}
+            width={960}
             videoConstraints={{
               width: 1280,
               height: 720,
