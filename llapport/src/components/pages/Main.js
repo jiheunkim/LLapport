@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.css';
 import Webcam from 'react-webcam';
@@ -11,11 +11,15 @@ function Main() {
   const [recording, setRecording] = useState(false);
   const [responseState, setResponseState] = useState(null);
   const [responseDescription, setResponseDescription] = useState('');
-  
+  const [circleColor, setCircleColor] = useState('gray');
+  const [message, setMessage] = useState('상태를 확인 중입니다...');
+
   // 녹화 시작 함수
   const startRecording = () => {
     setRecording(true);
-    circleColor = 'gray';
+    setCircleColor('gray');
+    setMessage('상태를 확인 중입니다...');
+
     const options = {
       mimeType: 'video/mp4', // 미디어 타입 설정
       bitsPerSecond: 128000, // 비트 속도 설정
@@ -40,7 +44,6 @@ function Main() {
   if (!recordedVideo) {    
     return;
   }
-  circleColor='gray';
 
   // FormData 객체 생성
   const formData = new FormData();
@@ -80,19 +83,19 @@ function Main() {
     });
   };
 
-  let circleColor = 'gray';
-  let message = '상태를 확인 중입니다...';
-
-  if (responseState === 1) {
-    circleColor = 'red';
-    message = responseDescription; // 백엔드에서 온 설명 메시지를 사용
-  } else if (responseState === 2) {
-    circleColor = 'yellow';
-    message = responseDescription;
-  } else if (responseState === 3) {
-    circleColor = 'green';
-    message = '';
-  }
+  useEffect(() => {
+    if (responseState === 1) {
+      setCircleColor('red');
+      setMessage(responseDescription); // 백엔드에서 온 설명 메시지를 사용
+    } else if (responseState === 2) {
+      setCircleColor('yellow');
+      setMessage(responseDescription);
+    } else if (responseState === 3) {
+      setCircleColor('green');
+      setMessage('');
+    }
+  }, [responseState, responseDescription]);
+  
 
   return (
     <>
