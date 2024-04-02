@@ -30,5 +30,5 @@
 실제 서비스는 홈캠을 활용하여 영상 인식을 진행될 예정입니다. <br>
 다음 시연 영상은 기획안 발표 과정 속 이해를 돕기 위해 간단히 개발되었음을 알립니다.
 <br><br>
-<img width="500" alt="image" src="https://github.com/LLapport/LLapport/assets/80433455/4ed8756b-fffb-40b9-abd4-060cc8c5c8e2">
-<img width="500" alt="image" src="https://github.com/LLapport/LLapport/assets/80433455/989a5578-4f1d-4634-8d4f-bbcb3ce050ef">
+<img width="450" alt="image" src="https://github.com/LLapport/LLapport/assets/80433455/4ed8756b-fffb-40b9-abd4-060cc8c5c8e2">
+<img width="450" alt="image" src="https://github.com/LLapport/LLapport/assets/80433455/989a5578-4f1d-4634-8d4f-bbcb3ce050ef">
