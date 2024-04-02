@@ -1,6 +1,3 @@
-# LLapport
-KU Medical Hackaton
-
 # 뇌졸중 조기진단 서비스 LLapport🧑‍⚕️
 
 ### 2023 KU 메디컬 해커톤 장려상
