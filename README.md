@@ -19,12 +19,16 @@
 <img src="/presentation/010.png" style="width: 100%;">
 <img src="/presentation/011.png" style="width: 100%;">
 <img src="/presentation/012.png" style="width: 100%;">
-<br>
+<br><br><br>
 
 ## ⏰ 프로젝트 기간
 2023.08.07 ~ 2023.10.06
 <br><br><br>
 
+## 👩🏻‍💻 배운 점
+- [x] 프로젝트의 기획안을 만들어보며 서비스 기획 과정에 대해 배웠습니다.
+- [x] `react-webcam`을 활용하여 영상을 녹화하고 이를 백엔드 서버에 보내는 과정을 배웠습니다.
+<br><br><br>
 
 ## 💡 시연 영상
 실제 서비스는 홈캠을 활용하여 영상 인식을 진행할 예정입니다. <br>
